@@ -37,7 +37,21 @@ For FEMNIST, we re-sample and re-partition the data to increase its heterogeneit
 
 FedRep is run using a command of the following form:
 
-`python main_fedrep.py --alg fedrep --dataset [dataset] --num_users [number of users] --model [model] ...`
+`python main_fedrep.py --alg fedrep --dataset [dataset] --num_users [num_users] --model [model] --frac [frac] --local_bs [local_bs] --lr [lr] --epochs [epochs] --local_ep [local_ep] --local_rep_ep [local_rep_ep] --gpu [gpu]`
+
+Explanation of parameters:
+
+- `alg` : algorithm to run, may be `fedrep`, `fedavg`, `prox` (FedProx), `fedper` (FedPer), or `lg` (LG-FedAvg)
+- `dataset` : dataset, may be `cifar10`, `cifar100`, `femnist`, `mnist`, `sent140`
+- `num_users` : number of users
+- `model` : for the CIFAR datasets, we use `cnn`, for the MNIST datasets, we use `mlp`, and for `sent140`, we use `res`
+- `frac` : fraction of participating users in each round (for all experiments we use 0.1)
+- `local_bs` : batch size used locally by each user
+- `lr` : learning rate
+- `epochs` : total number of communication rounds
+- `local_ep` : total number of local epochs
+- `local_rep_ep` : number of local epochs to execute for the representation (specific to FedRep)
+- `gpu` : GPU ID
 
 A full list of configuration parameters and their descriptions are given in `utils/options.py`.
 For examples of running FedRep as well as the FL baselines we compare against, please see the executable files in `scripts/`, which recover the results from the paper.
