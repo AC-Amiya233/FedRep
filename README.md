@@ -55,13 +55,7 @@ Please cite our paper if you use our implementation of FedRep:
 }
 ```
 
-
 # Acknowledgements and Disclaimer
 
-This repository was adapted from the repository https://github.com/pliang279/LG-FedAvg which implements LG-FedAvg and the experiments in [this paper](https://arxiv.org/pdf/2001.01523.pdf) by Paul Pu Liang, Terrance Liu, Ziyin Liu, Ruslan Salakhutdinov and Louis-Philippe Morency, which in turn was adapted from https://github.com/shaoxiongji/federated-learning.
+Much of the code in this repository was adapted from code in the repository https://github.com/pliang279/LG-FedAvg by Paul Pu Liang et al., which in turn was adapted from https://github.com/shaoxiongji/federated-learning by Shaoxiong Ji. 
 
-The implementation of the FedProx optimizer was used from https://github.com/JYWa/FedNova.
-language utils from leaf
-mysample from feddane
-other implementations our own for consistency
- 
