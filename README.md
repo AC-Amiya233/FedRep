@@ -6,11 +6,11 @@ This repository contains the official code for our proposed method, FedRep, and 
 
 *This paper has been accepted at ICML 2021.*
 
-![FedRep](/schematic.pdf)
+![FedRep](FedRep/schematic.pdf)
 
 ## Dependencies
 
-This code requires Python >= 3.6 and PyTorch >= 1.2.0. To install the other dependencies: `pip3 install -r requirements.txt`.
+The code requires Python >= 3.6 and PyTorch >= 1.2.0. To install the other dependencies: `pip3 install -r requirements.txt`.
 
 ## Data
 
@@ -55,7 +55,7 @@ Please cite our paper if you use our implementation of FedRep:
 }
 ```
 
-# Acknowledgements and Disclaimer
+# Acknowledgements
 
 Much of the code in this repository was adapted from code in the repository https://github.com/pliang279/LG-FedAvg by Paul Pu Liang et al., which in turn was adapted from https://github.com/shaoxiongji/federated-learning by Shaoxiong Ji. 
 
