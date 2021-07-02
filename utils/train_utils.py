@@ -1,3 +1,6 @@
+# Modified from: https://github.com/pliang279/LG-FedAvg/blob/master/utils/train_utils.py
+# credit goes to: Paul Pu Liang
+
 from torchvision import datasets, transforms
 from models.Nets import CNNCifar, CNNCifar100, RNNSent, MLP
 from utils.sampling import noniid
