@@ -6,7 +6,7 @@ This repository contains the official code for our proposed method, FedRep, and 
 
 *This paper has been accepted at ICML 2021.*
 
-<img src="schematic.png" width="200" height="200" />
+<img src="schematic.png" width="370" height="280" />
 
 ## Dependencies
 
