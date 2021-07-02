@@ -1,8 +1,12 @@
+# Modified from: https://github.com/pliang279/LG-FedAvg/blob/master/main_fed.py
+# credit goes to: Paul Pu Liang
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Python version: 3.6
 
-# This program implements FedRep under the specification --alg fedrep, as well as Fed-Per (--alg fedper), LG-FedAvg (--alg lg), FedAvg (--alg fedavg) and FedProx (--alg prox)
+# This program implements FedRep under the specification --alg fedrep, as well as Fed-Per (--alg fedper), LG-FedAvg (--alg lg), 
+# FedAvg (--alg fedavg) and FedProx (--alg prox)
 
 import copy
 import itertools
