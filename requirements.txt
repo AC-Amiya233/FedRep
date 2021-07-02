@@ -1,0 +1,13 @@
+copy
+itertools
+json
+math
+numpy
+os
+pandas
+random
+time
+torch==0.4.1
+torchvision==0.2.1
+tqdm
+
