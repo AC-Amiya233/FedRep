@@ -37,7 +37,7 @@ For FEMNIST, we re-sample and re-partition the data to increase its heterogeneit
 
 FedRep is run using a command of the following form:
 
-`python main_fedrep.py --alg fedrep --dataset [dataset] --num_users [num_users] --model [model] --frac [frac] --local_bs [local_bs] --lr [lr] --epochs [epochs] --local_ep [local_ep] --local_rep_ep [local_rep_ep] --gpu [gpu]`
+`python main_fedrep.py --alg fedrep --dataset [dataset] --num_users [num_users] --model [model] --model [model] --shard_per_user [shard_per_user] --frac [frac] --local_bs [local_bs] --lr [lr] --epochs [epochs] --local_ep [local_ep] --local_rep_ep [local_rep_ep] --gpu [gpu]`
 
 Explanation of parameters:
 
@@ -45,6 +45,8 @@ Explanation of parameters:
 - `dataset` : dataset, may be `cifar10`, `cifar100`, `femnist`, `mnist`, `sent140`
 - `num_users` : number of users
 - `model` : for the CIFAR datasets, we use `cnn`, for the MNIST datasets, we use `mlp`, and for `sent140`, we use `res`
+- `num_classes` : total number of classes
+- `shard_per_user` : number of classes per user (specific to CIFAR datasets and MNIST)
 - `frac` : fraction of participating users in each round (for all experiments we use 0.1)
 - `local_bs` : batch size used locally by each user
 - `lr` : learning rate
