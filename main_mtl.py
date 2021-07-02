@@ -1,3 +1,6 @@
+# Modified from: https://github.com/pliang279/LG-FedAvg/blob/master/main_mtl.py
+# credit goes to: Paul Pu Liang
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Python version: 3.6
