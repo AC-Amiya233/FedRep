@@ -6,7 +6,6 @@ from models.Nets import CNNCifar, CNNCifar100, RNNSent, MLP
 from utils.sampling import noniid
 import os
 import json
-from models.bigNets import ResNet18_gn
 
 trans_mnist = transforms.Compose([transforms.ToTensor(),
                                   transforms.Normalize((0.1307,), (0.3081,))])
